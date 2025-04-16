@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -26,11 +25,11 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: '#1a365d',
+					DEFAULT: '#6E59A5', // Secondary Purple
 					foreground: '#ffffff'
 				},
 				secondary: {
-					DEFAULT: '#daa520',
+					DEFAULT: '#9b87f5', // Primary Purple
 					foreground: '#ffffff'
 				},
 				destructive: {
@@ -42,7 +41,7 @@ export default {
 					foreground: 'hsl(var(--muted-foreground))'
 				},
 				accent: {
-					DEFAULT: '#f8f9fa',
+					DEFAULT: '#E5DEFF', // Soft Purple
 					foreground: '#1a365d'
 				},
 				popover: {
@@ -56,10 +55,10 @@ export default {
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
+					primary: '#7E69AB', // Tertiary Purple
+					'primary-foreground': '#ffffff',
+					accent: '#D6BCFA', // Light Purple
+					'accent-foreground': '#1a1f2c',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
