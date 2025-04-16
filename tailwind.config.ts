@@ -25,11 +25,11 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: '#6E59A5', // Secondary Purple
+					DEFAULT: '#5D469A', // Darker purple for better contrast
 					foreground: '#ffffff'
 				},
 				secondary: {
-					DEFAULT: '#9b87f5', // Primary Purple
+					DEFAULT: '#7E5CC3', // More saturated purple for better readability
 					foreground: '#ffffff'
 				},
 				destructive: {

@@ -6,9 +6,9 @@
   :root {
     --background: 270 50% 98%; // Light purple background
     --foreground: 270 50% 10%; // Dark purple text
-    --primary: 270 50% 50%; // Purple
+    --primary: 270 50% 40%; // Slightly darker purple
     --primary-foreground: 0 0% 100%;
-    --secondary: 270 70% 70%; // Brighter purple
+    --secondary: 270 70% 60%; // Slightly more saturated purple
     --secondary-foreground: 0 0% 100%;
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -37,9 +37,9 @@
   .dark {
     --background: 270 50% 10%; // Dark purple background
     --foreground: 270 50% 98%; // Light purple text
-    --primary: 270 50% 70%; // Lighter purple for dark mode
+    --primary: 270 50% 60%; // Lighter purple for dark mode
     --primary-foreground: 0 0% 100%;
-    --secondary: 270 70% 50%; // Darker purple
+    --secondary: 270 70% 55%; // Adjusted secondary for dark mode
     --secondary-foreground: 0 0% 100%;
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
