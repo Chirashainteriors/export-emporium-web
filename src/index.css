@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -32,6 +33,7 @@
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+    --focus-ring: 270 90% 50%;
   }
 
   .dark {
@@ -62,6 +64,7 @@
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+    --focus-ring: 270 70% 70%;
   }
 }
 
@@ -73,4 +76,32 @@
   body {
     @apply bg-background text-foreground;
   }
+  
+  /* Improved focus styles for keyboard navigation */
+  :focus-visible {
+    @apply outline-none ring-2 ring-focus-ring ring-offset-2 ring-offset-background transition-shadow;
+  }
+  
+  /* Skip to content link - hidden until focused */
+  .skip-to-content {
+    @apply sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-3 focus:bg-background focus:text-foreground focus:outline-none focus:ring-2 focus:ring-focus-ring;
+  }
 }
+
+/* Ensure link states have proper contrast */
+@layer utilities {
+  .link {
+    @apply text-primary hover:text-primary/80 focus-visible:text-primary/80 underline-offset-4 hover:underline;
+  }
+  
+  /* Improved contrast for disabled elements */
+  .text-disabled {
+    @apply text-gray-500 dark:text-gray-400;
+  }
+  
+  /* Ensure form elements have proper focus states */
+  .form-input-accessible {
+    @apply focus-visible:ring-2 focus-visible:ring-focus-ring focus-visible:ring-offset-2 focus-visible:border-transparent;
+  }
+}
+
